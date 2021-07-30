@@ -5,15 +5,14 @@ class Solution {
      * @return Integer
      */    
     function findLucky($arr) {
-    $unique_arr=array_count_values($arr);
-    
-    foreach($unique_arr as $key => $val)
-    {
-        if($key == $val)
+        $unique_arr=array_count_values($arr);
+
+        foreach($unique_arr as $key => $val)
         {
-            $ans[] = $val;
-        }
-        
+            if($key == $val)
+            {
+                $ans[] = $val;
+            }
         }
         if (!$ans)
         {
