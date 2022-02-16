@@ -11,3 +11,6 @@ class Solution:
                 else:
                     return [hashMap[diff]+1, i+1]
             hashMap[numbers[i]] = i
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)

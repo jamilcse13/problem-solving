@@ -8,3 +8,6 @@ class Solution:
             if diff in hashMap:
                 return [i, hashMap[diff]]
             hashMap[nums[i]] = i
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
