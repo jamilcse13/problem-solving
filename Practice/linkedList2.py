@@ -56,6 +56,18 @@ class LinkedList:
         new_node.next = prev_node.next
         # 5. make next of prev_node as new_node
         prev_node.next = new_node
+
+
+    # Function to reverse the linked list
+    def reverse(self):
+        prev = None
+        current = self.head
+        while(current is not None):
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
     
     
     # print the linked list
